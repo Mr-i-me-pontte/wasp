@@ -1,0 +1,63 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.jumbotron {
+    background-image: url("https://source.unsplash.com/featured/?concert");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.jumbotron h1 {
+    color: #fff;
+    text-shadow: 2px 2px #000;
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.panel {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.btn {
+    border-radius: 25px;
+    padding: 10px 25px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.card-text {
+    margin-top: 10px;
+}

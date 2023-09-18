@@ -1,0 +1,408 @@
+/* Uniswap font */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* OneInch font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.text-red {
+  color: rgb(232, 0, 111);
+}
+
+.text-orange {
+  color: rgb(243, 132, 30);
+}
+
+.text-green {
+}
+
+body {
+  margin: 0;
+}
+
+input,
+button {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  border: 0;
+  background-color: #0000;
+}
+
+input {
+  width: 100%;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.uniswapSection {
+  font-family: "Inter", sans-serif;
+  background-color: #f7f8fa;
+  background-image: radial-gradient(
+          50% 50% at 50% 50%,
+          #fc077d10 0,
+          rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.uniswap {
+  max-width: 480px;
+  width: 100%;
+  border-radius: 24px;
+  background: rgb(255, 255, 255);
+  box-shadow: rgb(0 0 0 / 1%) 0px 0px 1px, rgb(0 0 0 / 4%) 0px 4px 8px,
+  rgb(0 0 0 / 4%) 0px 16px 24px, rgb(0 0 0 / 1%) 0px 24px 32px;
+}
+
+.uniswapHead {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.25rem 0.5rem;
+}
+
+.uniswapSettings {
+  position: absolute;
+  top: 48px;
+  right: 16px;
+  z-index: 999;
+  display: none;
+  grid-gap: 16px;
+  padding: 16px;
+  border-radius: 12px;
+  background-color: rgb(237, 238, 242);
+  border: 1px solid rgb(206, 208, 217);
+  box-shadow: rgb(0 0 0 / 1%) 0px 0px 1px, rgb(0 0 0 / 4%) 0px 4px 8px,
+  rgb(0 0 0 / 4%) 0px 16px 24px, rgb(0 0 0 / 1%) 0px 24px 32px;
+}
+
+#uniswapSettingsTrigger:checked ~ .uniswapSettings {
+  display: grid;
+}
+
+.settingField,
+.settingFieldInline {
+  font-size: 14px;
+}
+
+.settingField {
+  display: grid;
+  grid-gap: 8px;
+}
+
+.settingFieldInline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.uniswapSettingsSwitch {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0.15rem;
+  border-radius: 12px;
+  background: rgb(255, 255, 255);
+}
+
+.uniswapSettingsSwitch::before,
+.uniswapSettingsSwitch::after {
+  padding: 0.3rem 0.4rem;
+  border-radius: 9px;
+}
+
+.uniswapSettingsSwitch::before {
+  content: "On";
+}
+
+#toggleExpertMode:not(:checked) ~ label[for="toggleExpertMode"]::after {
+  color: #ffff;
+  background-color: rgb(136, 141, 155);
+}
+
+#toggleExpertMode:checked ~ label[for="toggleExpertMode"]::before {
+  color: #ffff;
+  background-color: rgb(136, 141, 155);
+}
+
+#disableMultiHops:not(:checked) ~ label[for="disableMultiHops"]::after {
+  color: #ffff;
+  background-color: rgb(136, 141, 155);
+}
+
+#disableMultiHops:checked ~ label[for="disableMultiHops"]::before {
+  color: #ffff;
+  background-color: rgb(136, 141, 155);
+}
+
+.uniswapSettingsSwitch::after {
+  content: "Off";
+}
+
+.settingField input {
+  padding: 8px 16px;
+  font-size: 16px;
+  text-align: right;
+  border-radius: 36px;
+  border: 1px solid rgb(206, 208, 217);
+  background-color: rgb(247, 248, 250);
+}
+
+.uniswapBody {
+  display: grid;
+  grid-gap: 12px;
+  padding: 8px;
+}
+
+.uniswapArrow {
+  position: relative;
+  left: 50%;
+  left: calc(50% - 16px);
+  height: 32px;
+  width: 32px;
+  margin-top: -14px;
+  margin-bottom: -14px;
+  padding: 4px;
+  border-radius: 12px;
+  border: 4px solid rgb(255, 255, 255);
+  background-color: rgb(247, 248, 250);
+}
+
+.uniswapField {
+  display: flex;
+  padding: 1rem 1rem 1.75rem;
+  border-radius: 20px;
+  border: 1px solid rgb(237, 238, 242);
+  background-color: rgb(247, 248, 250);
+}
+
+.uniswapSelector {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 2.4rem;
+  padding: 0px 8px;
+  border-radius: 16px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgb(0 0 0 / 8%) 0px 6px 10px;
+}
+
+.uniswapSelectorLogo {
+  width: 24px;
+  height: 24px;
+  box-shadow: rgb(0 0 0 / 8%) 0px 6px 10px;
+  border-radius: 24px;
+}
+
+.uniswapTextInput {
+  flex: 1 1 auto;
+  font-size: 24px;
+  text-align: right;
+}
+
+.uniswapButton {
+  width: 100%;
+  padding: 16px;
+  border-radius: 20px;
+  background-color: rgb(253, 234, 241);
+  color: rgb(213, 0, 102);
+}
+
+.oneInchSection {
+  font-family: Roboto, sans-serif;
+  background-image: linear-gradient(rgb(14, 19, 29), rgb(6, 10, 16) 30.65%);
+}
+
+.oneInch {
+  min-height: 540px;
+  width: 100%;
+  max-width: 480px;
+  padding: 16px;
+  color: #7e96b8;
+  border: 1px solid rgb(39, 58, 85);
+  border-radius: 20px;
+  background-color: #191f2a;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+}
+
+.oneInchHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.oneInchHead .tabs {
+  display: flex;
+  gap: 2em;
+}
+
+.oneInchHead .tabs a.active {
+  position: relative;
+  color: #ffff;
+}
+
+.oneInchHead .tabs a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 100%;
+  height: 2px;
+  background-color: #59f;
+}
+
+.oneInchHead .buttons {
+  display: flex;
+  gap: 0.333em;
+}
+
+.oneInchHead .buttons button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 12px;
+  background-color: #212a3b;
+}
+
+.oneInchHead .buttons button.active {
+  color: #59f;
+  background-color: #1c2d4a;
+}
+
+.oneInchBody {
+  display: grid;
+  gap: 1.25em;
+}
+
+.oneInchFieldWrapper .title {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.oneInchFieldContainer {
+  display: grid;
+  grid-gap: 8px;
+  padding: 1em;
+  border-radius: 1em;
+  background-color: #060a10;
+}
+
+.oneInchFieldContainer .top,
+.oneInchFieldContainer .bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.oneInchFieldContainer .bottom .left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.oneInchFieldContainer .bottom .left img {
+  width: 28px;
+  height: 28px;
+}
+
+.oneInchFieldContainer .bottom .right {
+  flex-grow: 1;
+}
+
+.oneInchFieldContainer .bottom .right input {
+  text-align: right;
+  font-size: 24px;
+  color: #fff;
+}
+
+.oneInchFire {
+  text-align: center;
+  margin: 8px 0 -1em 0;
+}
+
+.oneInchButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 8px 0;
+  border-radius: 0.8em;
+  color: #59f;
+  background-color: #1c2d4a;
+}
+
+.oneInchInfo {
+  display: grid;
+  grid-gap: 6px;
+  font-size: 14px;
+}
+
+.oneInchInfoLine {
+  display: flex;
+  justify-content: space-between;
+}
+
+.oneInchInfoLine .important-text {
+  color: #fff;
+  margin-left: 8px;
+}
+
+.oneInchSwitch {
+  display: flex;
+  flex: 1 1 1fr;
+  background-color: #06070a;
+  padding: 4px;
+  color: #fff;
+  border-radius: 12px;
+}
+
+.oneInchSwitch label {
+  flex: 1 0 33.3%;
+  padding: 1em 0;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.oneInchSwitch input:checked + label {
+  background-color: #324054;
+}
+
+.oneInchBlockNum {
+  padding: 1.25em 0;
+  text-align: center;
+  font-size: 12px;
+}

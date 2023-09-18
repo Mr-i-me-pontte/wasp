@@ -1,0 +1,183 @@
+@import "../../../../../node_modules/bootstrap/scss/functions";
+@import "../../../../../node_modules/bootstrap/scss/variables";
+@import "../../../../../node_modules/bootstrap/scss/mixins/breakpoints";
+
+$fontColor: #5C3B6B;
+
+.SimplePage__LoginPage {
+  .ForgotPasswordButton {
+    color: $fontColor;
+    font-family: Lato, sans-serif;
+    font-weight: bold;
+    margin-top: 34px !important;
+  }
+
+  .input:nth-child(1) {
+    margin-bottom: 40px !important;
+  }
+  .input:nth-child(2) {
+    margin-bottom: -30px !important;
+  }
+}
+
+.Content {
+  //top: 154px;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 713px;
+  background: #F0F0F7 0% 0% no-repeat padding-box;
+  mix-blend-mode: normal;
+  opacity: 1;
+
+//.watermark{
+//  top: 748px;
+//  left: 79px;
+//  width: 1361px;
+//  height: 119px;
+//  border: 1px solid #C3C3D5;
+//  opacity: 1;
+//}
+
+
+}
+.flex {
+  display: flex;
+
+  .w100 {
+    width: 100%;
+  }
+
+  .col {
+    display: flex;
+    flex-flow: column;
+
+    &.wrap {
+      flex-flow: column wrap;
+    }
+
+    .row {
+      display: flex;
+      flex-flow: row;
+      flex: 0 1 auto;
+
+      &.wrap {
+        flex-flow: column wrap;
+      }
+    }
+  }
+}
+.L{
+  .container{
+    @include media-breakpoint-down(md) {
+      padding-left: initial;
+      padding-right: initial;
+    }
+  }
+
+  .btn{
+    margin: 0px auto;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(92, 59, 107);
+    padding: 12px 48px;
+    text-align: inherit;
+    border: 2px solid transparent;
+    cursor: pointer;
+    //margin: 0px;
+    display: inline-flex;
+    outline: none;
+    transition: all 0.4s ease 0s;
+    border-radius: 40px;
+    text-decoration: none;
+  }
+  .consent-box{
+    margin-top: 24px;
+    text-align: inherit;
+    font: inherit;
+    border: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    position: relative;
+    top: 40px;
+  }
+  .consent{
+    font-family: Lato, Roboto, sans-serif;
+    line-height: 1.4;
+    display: initial;
+    font-size: 0.875em;
+    color: #3B3349;
+  }
+  .main-box{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 64px;
+    padding-bottom: 48px;
+    text-align: inherit;
+  }
+  .line{
+    //top: 0px;
+    //left: 0px;
+    margin: 0 auto;
+    width: 1px;
+    height: 112%;
+    content: "";
+    //position: absolute;
+    //background: rgb(195, 195, 213);
+    background: #C3C3D5;
+    opacity: 1;
+    position: relative;
+    top: -16px;
+  }
+  .card{
+    border-bottom: 0!important;
+    border-top: 0!important;
+    border-left: 0!important;
+  }
+  &-title{
+    position: relative;
+    color: rgb(92, 59, 107);
+    margin-bottom: 16px;
+    text-align: inherit;
+    //font-size: 3rem;
+    font-size: 24px;
+    font-family: Lato, Roboto, sans-serif;
+    line-height: 1.2;
+    font-weight: bold;
+    display: block;
+    //margin: 0px;
+    letter-spacing: 0.5px;
+  }
+
+  .container-left-side h2 {
+    font-size: 24px;
+    font-family: Lato, sans-serif;
+    color: $fontColor;
+    font-weight: bold;
+  }
+
+  .container-right-side h2 {
+    font-size: 24px;
+    font-family: Lato, sans-serif;
+    color: $fontColor;
+    font-weight: bold;
+  }
+
+  .container-right-side button {
+    margin: 0;
+    font-family: Lato, sans-serif;
+    font-weight: medium;
+  }
+
+  form {
+    position: relative;
+    top: 40px;
+  }
+}
+
+.Modal .Modal__body form div.buttons-validation-code button {
+  margin-right: 20px !important;
+}
+
+

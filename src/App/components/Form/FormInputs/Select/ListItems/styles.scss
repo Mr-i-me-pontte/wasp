@@ -1,0 +1,136 @@
+$border-color: #c3c3d5;
+
+.select-list {
+  position: absolute;
+  z-index: 1000;
+  top: 100%;
+
+  max-height: 124px;
+  width: 100%;
+
+  overflow-y: auto;
+
+  padding: 0;
+  margin: 0;
+
+  margin-top: 7px;
+
+  border-radius: 6px;
+  font-size: 1rem !important;
+  line-height: 22px;
+  font-family: "Lato";
+  color: #3b3349;
+  border-radius: 6px !important;
+  border: 1px solid $border-color;
+  box-shadow: 0px 7px 64px #00000012;
+  background-color: white;
+
+  &-item {
+    list-style-type: none;
+
+    &-btn {
+      > span {
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        > .btn-checkbox {
+          margin-right: 10px;
+        }
+      }
+
+      .btn-checkbox {
+        height: 20px;
+        width: 20px;
+        position: relative;
+        cursor: pointer;
+
+        .checkmark {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          background-color: #0ab887;
+          border-radius: 4px;
+
+          &:after {
+            content: "";
+            position: absolute;
+            display: none;
+            left: 6.5px;
+            top: 2.3px;
+            width: 7px;
+            height: 12px;
+            border: solid white;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+          }
+        }
+
+        input {
+          opacity: 0.1;
+          cursor: pointer;
+          height: 20px;
+          width: 20px;
+          background-color: red;
+
+          &:checked {
+            ~ {
+              .checkmark {
+                &:after {
+                  display: block;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &__selected {
+        color: #3b3349;
+      }
+
+      &__unselected {
+        background-color: white;
+        color: #3b3349;
+
+        &:hover {
+          color: #bcb9c0;
+        }
+      }
+
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+
+      height: 40px;
+      width: 100%;
+
+      background-color: white;
+
+      border: 1px solid $border-color;
+      border: 0;
+    }
+  }
+
+  &::-webkit-scrollbar {
+    border-radius: 6px;
+    width: 13px;
+    background-color: #fff;
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 6px;
+    box-shadow: inset 0 0 10px 10px #e8e8ef;
+    border: solid 3.3px transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    box-shadow: inset 0 0 10px 10px #c3c3d5;
+    border: solid 3.3px transparent;
+  }
+}

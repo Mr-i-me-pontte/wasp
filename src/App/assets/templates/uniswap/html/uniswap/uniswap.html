@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+            name="viewport"
+    />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+    <title>Document</title>
+    <link href="../Global.css" rel="stylesheet" type="text/css"/>
+    <link href="uniswap.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="section uniswapSection">
+    <div class="uniswap">
+        <div class="uniswapHead">
+            <div class="title">Trade</div>
+            <input hidden id="uniswapSettingsTrigger" type="checkbox"/>
+            <div class="buttons">
+                <label for="uniswapSettingsTrigger">
+                    <img src=".//Users/Mr-i-me/code/Mr-i-me-pontte/Projects/ticket/crowd-pass/src/App/pages/Swap/Home/HomeUniswap/gear.svg" alt="">
+                </label>
+            </div>
+            <div class="uniswapSettings">
+                <h4>Transaction Settings</h4>
+                <div class="settingField">
+                    <div class="pretext">Slippage tolerance</div>
+                    <input placeholder="4.00%" type="text"/>
+                </div>
+                <div class="settingField">
+                    <div class="pretext">Transaction deadline</div>
+                    <input placeholder="20 minutes" type="text"/>
+                </div>
+                <h4>Interface Settings</h4>
+                <div class="settingFieldInline">
+                    <div class="pretext">Toggle Expert Mode</div>
+                    <input hidden id="toggleExpertMode" type="checkbox"/>
+                    <label
+                            class="uniswapSettingsSwitch"
+                            for="toggleExpertMode"
+                    ></label>
+                </div>
+                <div class="settingFieldInline">
+                    <div class="pretext">Disable Multihops</div>
+                    <input hidden id="disableMultiHops" type="checkbox"/>
+                    <label
+                            class="uniswapSettingsSwitch"
+                            for="disableMultiHops"
+                    ></label>
+                </div>
+            </div>
+        </div>
+        <div class="uniswapBody">
+            <div class="uniswapFields">
+                <div class="uniswapField">
+                    <div class="uniswapSelector">
+                        <img
+                                class="uniswapSelectorLogo"
+                                src="https://assets.coingecko.com/coins/images/4454/thumb/0xbtc.png?1561603765"
+                        />
+                        <div class="uniswapSelectorText">0XBTC</div>
+                        <div class="uniswapSelectorArrow">
+                            <svg
+                                    class="sc-33m4yg-8 khlnVY"
+                                    fill="none"
+                                    height="7"
+                                    viewBox="0 0 12 7"
+                                    width="12"
+                                    xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                        d="M0.97168 1L6.20532 6L11.439 1"
+                                        stroke="#AEAEAE"
+                                ></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <input class="uniswapTextInput" placeholder="0.0" type="text"/>
+                </div>
+                <div class="uniswapArrow">
+                    <svg
+                            fill="none"
+                            height="16"
+                            stroke="#6E727D"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            viewBox="0 0 24 24"
+                            width="16"
+                            xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <line x1="12" x2="12" y1="5" y2="19"></line>
+                        <polyline points="19 12 12 19 5 12"></polyline>
+                    </svg>
+                </div>
+                <div class="uniswapField">
+                    <div class="uniswapSelector">
+                        <img
+                                class="uniswapSelectorLogo"
+                                src="https://assets.coingecko.com/coins/images/11035/thumb/0xmnr.PNG?1587357680"
+                        />
+                        <div class="uniswapSelectorText">0XMR</div>
+                        <div class="uniswapSelectorArrow">
+                            <svg
+                                    class="sc-33m4yg-8 khlnVY"
+                                    fill="none"
+                                    height="7"
+                                    viewBox="0 0 12 7"
+                                    width="12"
+                                    xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                        d="M0.97168 1L6.20532 6L11.439 1"
+                                        stroke="#AEAEAE"
+                                ></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <input class="uniswapTextInput" placeholder="0.0" type="text"/>
+                </div>
+            </div>
+            <button class="uniswapButton">Connect Wallet</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

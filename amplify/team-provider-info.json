@@ -1,0 +1,29 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-toolbelt-dev-183421-authRole",
+      "UnauthRoleArn": "arn:aws:iam::848638426587:role/amplify-toolbelt-dev-183421-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::848638426587:role/amplify-toolbelt-dev-183421-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-toolbelt-dev-183421-deployment",
+      "UnauthRoleName": "amplify-toolbelt-dev-183421-unauthRole",
+      "StackName": "amplify-toolbelt-dev-183421",
+      "StackId": "arn:aws:cloudformation:us-east-1:848638426587:stack/amplify-toolbelt-dev-183421/d21a0d60-5588-11ee-8a79-0eae7f17c02d",
+      "AmplifyAppId": "d3n5vmc8wej7b0"
+    },
+    "categories": {
+      "auth": {
+        "toolbelt": {}
+      },
+      "function": {
+        "CreateSerasaReport": {
+          "deploymentBucketName": "amplify-toolbelt-dev-183421-deployment",
+          "s3Key": "amplify-builds/CreateSerasaReport-4b2f4132653863565946-build.zip"
+        }
+      },
+      "storage": {
+        "s3toolbeltstorage": {}
+      }
+    }
+  }
+}
