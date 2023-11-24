@@ -1,0 +1,78 @@
+/* General styles for the card and title */
+.card {
+  background-color: #f8f9fa;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+/* Table styles */
+.table-responsive {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+.table th,
+.table td {
+  border: 1px solid #dee2e6;
+  padding: 10px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #343a40;
+  color: white;
+  font-weight: 600;
+}
+
+.table-striped tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+/* Sticky header styles */
+.header-container {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1;
+}
+
+/* Table body container for scrolling */
+.table-body-container {
+  max-height: 400px; /* Set a maximum height for the table body to enable scrolling */
+  overflow-y: auto;
+}
+
+/* Cell content styles */
+.cell-content {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .table td,
+  .table th {
+    padding: 8px; /* Reduce padding for smaller screens */
+  }
+
+  .card-title {
+    font-size: 1.2rem; /* Decrease card title font size for smaller screens */
+  }
+
+  .table-responsive {
+    overflow-x: scroll; /* Allow horizontal scrolling for smaller screens */
+  }
+}

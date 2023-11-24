@@ -9,15 +9,7 @@ import { ThemeProvider } from "@aws-amplify/ui-react";
 import "@aws-amplify/ui-react/styles.css";
 import { studioTheme } from "./ui-components";
 
-import { Amplify, AuthModeStrategyType } from "aws-amplify";
-import awsconfig from "./aws-exports";
 
-Amplify.configure({
-    ...awsconfig,
-    DataStore: {
-        authModeStrategyType: AuthModeStrategyType.MULTI_AUTH,
-    },
-});
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

@@ -8,7 +8,7 @@ import {AuthContext} from "./components/Auth";
 import './style.scss';
 import {withAuthenticator} from "@aws-amplify/ui-react";
 import '@aws-amplify/ui-react/styles.css';
-import Layout from "./components/Layout/Layout";
+import Layout from "./components/Layout";
 import "react-toastify/dist/ReactToastify.css";
 
 
